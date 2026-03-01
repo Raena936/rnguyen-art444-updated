@@ -1,0 +1,237 @@
+/* CSS GOES HERE this is a comment*/
+    @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Host+Grotesk&family=Meow+Script&display=swap');
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    background-color: #cfe2fb;
+}
+
+
+
+
+div#wrapper {
+    background: coral;
+}
+
+div.text-wrapper {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+    div h1 {
+        font-size: 36px;
+        
+        
+
+    }
+    div p {
+        font-family: "Host Grotesk";
+        font-size: 18px;
+        
+    
+
+    }
+
+
+
+section {
+    padding: 60px 20px;
+}
+/* section:nth-child(even) {
+    background-color: #f2f2f2;
+} */
+
+/* Nav Bar CSS */
+section#nav-bar {
+background-color: #5769a7;
+
+}
+
+div.nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div h1.nav-name {
+    font-family: "Meow Script";
+    font-size: 20px;
+    color: white;
+}
+
+div.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Home page CSS */
+section#header {
+    background-color: #8596cf;
+}
+
+/* div.header-text {
+    flex-direction: column
+} */
+
+
+
+div.container {
+    width: 100%;
+    max-width: 960px;
+    text-align: left;
+    margin: 0 auto;
+    
+}
+
+div.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+div.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 31px;
+    
+}
+
+div h1.my-name {
+        font-family: "Meow Script";
+        font-size: 45px;
+        color: white;
+    }
+
+div.learn-more-button {
+    background-color: white;
+    color:#2d455b;
+    padding: 10px;
+    border-radius: 15px;
+
+    
+}
+
+div.semester-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+h2 {
+    font-family: "Gamja Flower";
+    font-size: 35px;
+    color:#2d455b;
+}
+
+h3 {
+    font-family: "Gamja Flower";
+    font-size: 30px;
+    color:#2d455b;
+}
+
+p {
+    font-family: "Host Grotesk";
+    font-size: 16px;
+    color:#2d455b;
+}
+
+
+h1 {
+    font-family: "Gamja Flower";
+    font-size: 3em;
+}
+
+section .gallery {
+    width: 100%;
+}
+section .gallery img {
+    width: 32%;
+}
+
+/* About page CSS */
+div.inner-about-header {
+   display: flex;
+   flex-direction: row;
+   gap: 15px; 
+   
+}
+
+div.about-text{
+    color: white;
+    
+    font-family: "Gamja Flower";
+    font-weight: 400;
+    font-style: normal;    
+
+}
+
+div.about-image img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+div.faq-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+div h3.faq-question {
+    background-color: #6557a7;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: "Gamja Flower";
+    font-size: 25px;
+    color: white;
+}
+
+div p.faq-answer {
+    background-color: #aca4d1;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: "Host Grotesk";
+    font-size: 16px;
+    color: #342e44;
+}
+/* Footer CSS */
+footer {
+    background-color: #5769a7;
+    color: #fff;
+    padding: 10px;
+}
+
+div.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 15px;
+    
+}
+
+div p.footer-text {
+    font-family: "Gamja Flower";
+    font-size: 15px;
+    color: white;
+
+}
