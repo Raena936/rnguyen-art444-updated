@@ -1,5 +1,81 @@
 /* TABLET VIEW */
 @media only screen and (max-width:992px) {
+ 
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 33px;
+  }
+
+
+  p {
+    font-size: 16px;
+  }
+
+ div.semester-text p {
+    width: 65%;
+ }
+
+ div.about-image img {
+
+    width: 75%;
+
+}
+
+ div.about-text {
+    width: 126%;
+}
+
+  section.fall-spring-semesters {
+    display: flex;
+    flex-direction: column;
+  }
+  div.gallery {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  div.gallery img {
+    width: 65%;
+    display: block;
+  }
+
+  div.semester-text p {
+    text-align: center;
+    width: 75%;
+
+  }
+  div.inner-about-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.about-image img {
+    width: 65%;
+    align-items: center;
+
+  }
+
+  div.about-text {
+    width: 75%;
+  }
+
+div.question.faq-question {
+    width: 85%;
+
+}
+
+div.question.faq-answer {
+    width: 85%;
+}
+
+
+
 
 }
 
@@ -7,4 +83,67 @@
 /* MOBILE VIEW */
 @media only screen and (max-width: 478px) {
   
+  h1 {
+    font-size: 32px;
+  }
+
+  div h1.my-name {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 29px;
+  }
+
+  h3 {
+    font-size: 21px;
+
+  }
+
+  section.fall-spring-semesters {
+    display: flex;
+    flex-direction: column;
+  }
+  div.gallery {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  div.gallery img {
+    width: 80%;
+    display: block;
+  }
+
+  div.semester-text p {
+    text-align: center;
+    width: 95%;
+
+  }
+  div.inner-about-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.about-image img {
+    width: 80%;
+    align-items: center;
+
+  }
+
+  div.about-text {
+    width: 95%;
+  }
+
+div.question.faq-question {
+    width: 95%;
+
+}
+
+div.question.faq-answer {
+    width: 95%;
+}
+
+
 }

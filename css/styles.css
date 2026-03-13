@@ -1,6 +1,13 @@
 /* CSS GOES HERE this is a comment*/
     @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Host+Grotesk&family=Meow+Script&display=swap');
 
+/* :root {
+    --primary-bg-color
+    --primary-color
+
+
+} */
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 
@@ -16,7 +23,20 @@ body {
 }
 
 
+/* getting link rid of underline */
+a {
+    text-decoration: none; 
+}
 
+/* all link colors */
+a.white { 
+    color: white;
+}
+
+
+
+
+/* Name in nav */
 
 div#wrapper {
     background: coral;
@@ -26,20 +46,37 @@ div.text-wrapper {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+h1 {
+    font-family: "Gamja Flower";
+    font-size: 36px;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+}
 
-    div h1 {
-        font-size: 36px;
-        
-        
+h2 {
+    font-family: "Gamja Flower";
+    font-size: 35px;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    color:#2d455b;
+}
 
-    }
-    div p {
-        font-family: "Host Grotesk";
-        font-size: 18px;
-        
-    
+h3 {
+    font-family: "Gamja Flower";
+    font-size: 25px;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    color:#2d455b;
+}
 
-    }
+p {
+    font-family: "Host Grotesk";
+    font-size: 17px;
+    margin-block-start: 0%;
+    margin-block-end: 0%;
+    color:#2d455b;
+}
+
 
 
 
@@ -59,13 +96,19 @@ background-color: #5769a7;
 div.nav-flex {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-left: 70px;
+    margin-right: 70px;
+    
 }
 
-div h1.nav-name {
+div.nav-name {
     font-family: "Meow Script";
-    font-size: 20px;
+    font-size: 40px;
+    font-weight: 400;
     color: white;
+    margin-left: 0px;
+
 }
 
 div.nav-links {
@@ -98,13 +141,16 @@ div.header {
     flex-direction: column;
     align-items: center;
     gap: 14px;
+  
 }
+
 
 div.main{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 31px;
+
     
 }
 
@@ -112,15 +158,44 @@ div h1.my-name {
         font-family: "Meow Script";
         font-size: 45px;
         color: white;
+
     }
 
 div.learn-more-button {
     background-color: white;
-    color:#2d455b;
+    font-family: "Gamja Flower";
+    font-size: 19px;
     padding: 10px;
     border-radius: 15px;
-
     
+}
+
+/* learn more button text color */
+a.learn-button { 
+    color:#2d455b;
+}
+
+section#fall-spring-semesters {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+div.semester-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color:#2d455b;
+}
+
+div.gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px;
+
 }
 
 div.semester-text {
@@ -128,33 +203,16 @@ div.semester-text {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-}
-
-h2 {
-    font-family: "Gamja Flower";
-    font-size: 35px;
-    color:#2d455b;
-}
-
-h3 {
-    font-family: "Gamja Flower";
-    font-size: 30px;
-    color:#2d455b;
-}
-
-p {
-    font-family: "Host Grotesk";
-    font-size: 16px;
-    color:#2d455b;
+    margin-top: 15px;
 }
 
 
-h1 {
-    font-family: "Gamja Flower";
-    font-size: 3em;
-}
 
 section .gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* alignment-baseline: middle; */
     width: 100%;
 }
 section .gallery img {
@@ -170,17 +228,23 @@ div.inner-about-header {
 }
 
 div.about-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
-    
     font-family: "Gamja Flower";
     font-weight: 400;
-    font-style: normal;    
+    font-style: normal;
+    width: 99%;
+   
+}
 
+div.about-text p {
+    text-align: center;
 }
 
 div.about-image img {
-    max-width: 80%;
-    max-height: 80%;
+    width: 65%;
 }
 
 div.faq-text {
@@ -193,25 +257,36 @@ div.question {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
 }
+
+/* Target a tag for the Raena Nguyen clickable thing in the nav */
 
 div h3.faq-question {
     background-color: #6557a7;
     padding: 15px;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     font-family: "Gamja Flower";
     font-size: 25px;
+    text-align: center;
+    width: 75%;
     color: white;
 }
 
 div p.faq-answer {
     background-color: #aca4d1;
     padding: 15px;
-    border-radius: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     font-family: "Host Grotesk";
     font-size: 16px;
+    text-align: center;
+    width: 75%;
     color: #342e44;
 }
 /* Footer CSS */
