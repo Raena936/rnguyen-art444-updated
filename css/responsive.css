@@ -1,5 +1,5 @@
 /* TABLET VIEW */
-@media only screen and (max-width:992px) {
+@media only screen and (max-width:1171px) {
  
 
   h1 {
@@ -13,6 +13,18 @@
 
   p {
     font-size: 16px;
+  }
+
+  img.icon {
+    display: block;
+  }
+
+  ul#main-nav {
+    display: block;
+  }
+
+  div.nav-links {
+    display: none;
   }
 
  div.semester-text p {
@@ -81,7 +93,7 @@ div.question.faq-answer {
 
 
 /* MOBILE VIEW */
-@media only screen and (max-width: 478px) {
+@media only screen and (max-width: 560px) {
   
   h1 {
     font-size: 32px;
@@ -99,6 +111,11 @@ div.question.faq-answer {
     font-size: 21px;
 
   }
+
+  p {
+    font-size: 15px;
+  }
+
 
   section.fall-spring-semesters {
     display: flex;

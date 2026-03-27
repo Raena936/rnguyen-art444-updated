@@ -24,16 +24,21 @@ body {
 
 
 /* getting link rid of underline */
-a {
-    text-decoration: none; 
-}
-
 /* all link colors */
-a.white { 
+a:link { 
     color: white;
+    text-decoration: none;
 }
 
+a:visited {
+    color: white;
+    text-decoration: none;
+}
 
+a:hover {
+    color:aliceblue;
+    text-decoration: none;
+}
 
 
 /* Name in nav */
@@ -78,14 +83,57 @@ p {
 }
 
 
-
-
 section {
     padding: 60px 20px;
 }
 /* section:nth-child(even) {
     background-color: #f2f2f2;
 } */
+
+
+/* Mobile menu */
+/* div.mobile-container {
+    max-width: 478px;
+    
+} */
+
+
+
+ul#main-nav {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    width: 300px;
+    height: auto;
+    background-color: #5769a7;
+    text-align: center; 
+    line-height: 300%;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Host Grotesk";
+    font-size: 16px;
+}
+
+img.icon {
+    display: none;
+    position: absolute;
+    top: 62px;
+    right: 10px;
+}
+
+div.mobile-menu a {
+    padding: 10px;
+    display: block;
+    
+    
+}
+
+div.mobile-menu a:hover {
+    background-color:#48578c;
+}
+
 
 /* Nav Bar CSS */
 section#nav-bar {
@@ -102,6 +150,13 @@ div.nav-flex {
     
 }
 
+
+div.name {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+}
+
 div.nav-name {
     font-family: "Meow Script";
     font-size: 40px;
@@ -111,11 +166,24 @@ div.nav-name {
 
 }
 
+img.light {
+    width: 60px;
+    height: auto;
+}
+
 div.nav-links {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
 }
+
+
+img.icon {
+    width: 60px;
+    height: auto;
+    
+}
+
 
 /* Home page CSS */
 section#header {
@@ -175,7 +243,7 @@ a.learn-button {
     color:#2d455b;
 }
 
-section#fall-spring-semesters {
+section.fall-spring-semesters {
     margin-top: 10px;
     margin-bottom: 15px;
 }
