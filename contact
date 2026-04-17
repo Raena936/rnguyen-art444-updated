@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Art 444 Student Work">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Welcome to my new website!</title>
+
+
+  
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Contact me</h1>
+
+            <form>
+                <div style="display: flex; flex-direction: column">
+                    <label for="full-name">Full Name</label>
+                    <input id="full-name" name="full-name" type="text" placeholder="Full Name" required />
+                </div>
+
+                <div style="display: flex; flex-direction:column">
+                    <label="email">Email</label>
+                    <input id="email" name="email" require type="email" placeholder>
+                </div>
+
+                <div style="display: flex; flex-direction:column">
+                    <label="phone">Phone</label>
+                    <input id="phone" name="phone" require type="phone" placeholder="PHONE" maxlength="10">
+                </div>
+
+                <div style="display: flex; flex-direction:column">
+                    <label="for-resume">Resume</label>
+                    <input id="resume" name="resume" require type="file">
+                </div>
+
+                <div style="display: flex; flex-direction:column">
+                    <label="color">Color</label>
+                    <input id="color" name="color" require type="color">
+                </div>
+
+                <div>
+
+                    <span>What do you think happens when you die?</span>
+                    <label><input type="radio" value="choice-1" />Iunno man</label>
+                    <label><input type="radio" value="choice-2" />Somethingn</label>
+                    <label><input type="radio" value="choice-3" />Yes</label>
+                </div>
+
+                <div>
+
+                    <span>What do you think happens when you die?</span>
+
+                        <select>
+                            <option value="choice-1">Iunno man</option>
+                            <option value="choice-2">Somethingn</option>
+                            <option value="choice-3">Yes</option>
+                        </select>
+
+                        <input type="button" value="SUBMIT YER INFO" />
+                    
+                </div>
+            </form>
+        </div>
+        
+    </section>    
+<body>    

@@ -10,10 +10,11 @@
     font-size: 33px;
   }
 
-
   p {
     font-size: 16px;
   }
+
+
 
   img.icon {
     display: block;
@@ -26,9 +27,18 @@
   div.nav-links {
     display: none;
   }
+div.mobile-menu {
+  display: none;
+}
+
 
  div.semester-text p {
     width: 65%;
+ }
+
+ div.about-image {
+  display: flex;
+  justify-content: center;
  }
 
  div.about-image img {
