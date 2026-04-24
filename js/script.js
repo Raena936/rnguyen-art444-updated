@@ -17,77 +17,114 @@ function menuButton() {
         x.style.display = "none";
  }
 
-// light and dark mode
- function darkMode() {
+ //open faq to show answers
 
- }
+const faqToggle = document.querySelectorAll('.question');
+for (let i = 0; i < faqToggle.length; i++) {
+    faqToggle[i].addEventListener("click", function() { this.classList.toggle('faq-open') });
+}
+
+// light and dark mode
 
 function darkMode() {
-    document.getElementById("ld-icon").src = "light-mode-svgrepo-com"; //switches svg to lightmode icon when in dark mode
-    document.getElementById("fs-section").setAttribute("class", "fs-bg-dark-mode");
-    document.getElementById("header").setAttribute("class", "header-dark-mode");
-    
-    document.getElementById("header-intro").setAttribute("class", "intro-header-dark-mode");
-    document.getElementById("header-greet").setAttribute("class", "greet-line-dark-mode");
-    document.getElementById("header-name").setAttribute("class", "my-name-dark-mode");
-    document.getElementById("learn-button").setAttribute("class", "learn-more-button-dark-mode");
-    document.getElementById("link-learn-more").setAttribute("class", "learn-button-dark-mode");
-    document.getElementById("fs-titles").setAttribute("class", "semester-title-dark-mode");
-    document.getElementById("fs-text").setAttribute("class", "semester-text-dark-mode");
-    document.getElementById("me-info").setAttribute("class", "about-me-dark-mode");
-    document.getElementById("faq-title").setAttribute("class", "faq-text-dark=mode");
-    document.getElementById("question").setAttribute("class", "faq-question-dark-mode");
-    document.getElementById("answer").setAttribute("class", "faq-answer-dark-mode");
-    console.log("now it works mf");
-    // var element = document.
-    // if (document.querySelectorAll('dark-mode')) {
+
+    document.getElementById("ld-icon").src = "images/light-mode-svgrepo-com.svg"; //switches svg to lightmode icon when in dark mode
+        
+
+    const homeaboutheaderDark = document.querySelectorAll('.home-about-header')
+        for (let i = 0; i < homeaboutheaderDark.length; i++) {
+            homeaboutheaderDark[i].classList.toggle('home-about-header-dark-mode');
+        }
+
+    const introheadDark = document.querySelectorAll('.intro-header')
+        for (let i = 0; i < introheadDark.length; i++) {
+            introheadDark[i].classList.toggle('intro-header-dark-mode');
+        }
+
+    const greetlineDark = document.querySelectorAll('.greet-line')
+        for (let i = 0; i < greetlineDark.length; i++) {
+            greetlineDark[i].classList.toggle('greet-line-dark-mode');
+        }
+
+    const mynameDark = document.querySelectorAll('.my-name')
+        for (let i = 0; i < mynameDark.length; i++) {
+            mynameDark[i].classList.toggle('my-name-dark-mode');
+        }
+
+    const learnmoreDark = document.querySelectorAll('.learn-more-button')
+        for (let i = 0; i < learnmoreDark.length; i++) {
+            learnmoreDark[i].classList.toggle('learn-more-button-dark-mode');
+        }
+
+    const linklearnDark = document.querySelectorAll('.learn-button')
+        for (let i = 0; i < linklearnDark.length; i++) {
+            linklearnDark[i].classList.toggle('learn-button-dark-mode');
+        }
+
+    const fallspringDark = document.querySelectorAll('.fall-spring-semesters')
+        for (let i = 0; i < fallspringDark.length; i++) {
+            fallspringDark[i].classList.toggle('fs-bg-dark-mode');
+        }
+
+    const semestertitleDark = document.querySelectorAll('.semester-title')
+        for (let i = 0; i < semestertitleDark.length; i++) {
+            semestertitleDark[i].classList.toggle('semester-title-dark-mode');
+        }
+
+    const textsemesterDark = document.querySelectorAll('.semester-text')
+        for (let i = 0; i < textsemesterDark.length; i++) {
+            textsemesterDark[i].classList.toggle('semester-text-dark-mode');
+        }
+
+    const aboutheaderDark = document.querySelectorAll('.about-header')
+        for (let i = 0; i < aboutheaderDark.length; i++) {
+            aboutheaderDark[i].classList.toggle('about-header-dark-mode');        
+        }    
+
+    const abouttextDark = document.querySelectorAll('.about-text')
+        for (let i = 0; i < abouttextDark.length; i++) {
+            abouttextDark[i].classList.toggle('about-text-dark-mode');        
+        }
+
+    const faqDark = document.querySelectorAll('.faq-bg')
+        for (let i = 0; i < faqDark.length; i++) {
+            faqDark[i].classList.toggle('faq-bg-dark-mode');    
+        }
+
+    const faqtextDark = document.querySelectorAll('.faq-text')
+        for (let i = 0; i < faqtextDark.length; i++) {
+            faqtextDark[i].classList.toggle('faq-text-dark-mode');
+        }
+
+    const faqquestionDark = document.querySelectorAll('.faq-question')
+        for (let i = 0; i < faqquestionDark.length; i++) {
+            faqquestionDark[i].classList.toggle('faq-question-dark-mode');
+        }
+
+    const faqansDark = document.querySelectorAll('.faq-answer')
+        for (let i = 0; i < faqansDark.length; i++) {
+            faqansDark[i].classList.toggle('faq-answer-dark-mode');        
+        }
+ // if light mode icon is there, onclick switches it back to dark mode icon and removes class list dark mode
+    // if (document.getElementById("ld-icon").src = "images/light-mode-svgrepo-com.svg") {
+    //     document.getElementById("ld-icon").src = "images/moon-dark-theme-svgrepo-com.svg"
+
+    // } else {
 
     // }
-    
- 
-}
+
+
+    }
 
 
 
-// if it has the StyleSheet, the setAttribute so it's dark-mode stylesheet
-// if not, copy same thing and just have it do stylesheet
+const currentHour = new Date().getHours();
 
+ if (currentHour >= 18 || currentHour < 6) {
 
-// const mainNav = document.getElementById("hamburg-menu");
-// const navLink = mainNav.querySelectorAll('.main-nav');
+     document.body.classList.add("dark-mode");
 
-//  for (let i = 0; i < navLink.length; i++) {
-//      navLink[i].addEventListener('click', myFunction);
-//  }
-
-//  function alertMessage() {
-//      alert("Hey you clicked the message, good job wew.")
-// }
-
-// const d = new Date();
-// let currentTime = d.toLocaleTimeString();
-
-
-const hour = new Date().getHours();
-
-if (hour < 18) {
-
-} else {
-
-    document.getElementById("fs-section").setAttribute("class", "fs-bg-dark-mode");
-    document.getElementById("header").setAttribute("class", "header-dark-mode");
-    document.getElementById("header-intro").setAttribute("class", "intro-header-dark-mode");
-    document.getElementById("header-greet").setAttribute("class", "greet-line-dark-mode");
-    document.getElementById("header-name").setAttribute("class", "my-name-dark-mode");
-    document.getElementById("learn-button").setAttribute("class", "learn-more-button-dark-mode");
-    document.getElementById("link-learn-more").setAttribute("class", "learn-button-dark-mode");
-    document.getElementById("fs-titles").setAttribute("class", "semester-title-dark-mode");
-    document.getElementById("fs-text").setAttribute("class", "semester-text-dark-mode");
-    document.getElementById("me-info").setAttribute("class", "text-dark-mode");
-    document.getElementById("faq-title").setAttribute("class", "faq-text-dark=mode");
-    document.getElementById("question").setAttribute("class", "faq-question-dark-mode");
-    document.getElementById("answer").setAttribute("class", "faq-answer-dark-mode");
-}
+ }
 
 
 
